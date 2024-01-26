@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import thalys.hair.api.domain.address.AddressData;
 
 public record EmployeeRegistrationData(
-        @NotBlank
+        @NotBlank(message = "Name is required")
         String name,
         @NotBlank
         String phone,
