@@ -31,7 +31,6 @@ public class ErrorHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body("email already used");
     }
 
-
     private record DataErrorValidation(String field, String msg) {
         public DataErrorValidation(FieldError error) {
             this(error.getField(), error.getDefaultMessage());
