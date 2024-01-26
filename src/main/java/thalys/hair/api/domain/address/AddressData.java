@@ -1,4 +1,4 @@
-package thalys.hair.api.address;
+package thalys.hair.api.domain.address;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

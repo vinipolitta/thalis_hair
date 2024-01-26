@@ -1,4 +1,4 @@
-package thalys.hair.api.employee;
+package thalys.hair.api.domain.employee;
 
 public enum Specialty {
     CORTE("Corte de Cabelo Feminino"),

@@ -1,10 +1,10 @@
-package thalys.hair.api.employee;
+package thalys.hair.api.domain.employee;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import thalys.hair.api.address.AddressData;
+import thalys.hair.api.domain.address.AddressData;
 
 public record EmployeeRegistrationData(
         @NotBlank
@@ -16,6 +16,9 @@ public record EmployeeRegistrationData(
         String email,
         @NotNull
         Specialty specialty,
+
+
+        Boolean active,
         @NotNull
         @Valid
         AddressData address) {
